@@ -22,3 +22,6 @@ npx wrangler pages deploy public
 --- or ---
 wrangler pages deploy public
 ```
+
+## Project source code structure (simple router added!)
+![project folders](https://github.com/bitflow-oss/cloudflare-pages-with-workers-starter/assets/13836042/75d5ec25-ea7f-486f-b9ef-a356a20bfec3)
