@@ -3,27 +3,22 @@
 Forked from <br>
 `https://github.com/cloudflare/workers-sdk/tree/main/fixtures/pages-workerjs-with-routes-app`
 
-## Publish
+## Local run
+
+```bash
+# Local run
+npx wrangler pages dev public --port 8080
+--- or ---
+wrangler pages dev public --port 8080
+```
+
+## Cloudflare deploy (publish)
 
 > Please note that in order to deploy this project to `.pages.dev` you need to have a [Cloudflare account](https://dash.cloudflare.com/login)
 
 ```bash
-# Deploy the directory of static assets as a Pages deployment
+# Cloudflare deploy
 npx wrangler pages deploy public
-```
-
-If deployment was successful, follow the URL refrenced in the success message in your terminal
-
-```
-✨ Deployment complete! Take a peek over at https:/<hash>.<PROJECT_NAME>.pages.dev
-```
-
-## Run tests
-
-```bash
-# cd into the test fixture folder
-cd fixtures/pages-workerjs-with-routes-app
-
-# Run tests
-npm run test
+--- or ---
+wrangler pages deploy public
 ```
