@@ -5,12 +5,7 @@
 	"sideEffects": false,
 	"scripts": {
 		"dev": "npx wrangler pages dev public --port 8080",
-		"deploy": "npx wrangler pages deploy public",
-		"test": "npx vitest run",
-		"test:ci": "npx vitest run",
-		"test:watch": "npx vitest",
-		"type:tests": "tsc -p ./tests/tsconfig.json",
-		"check:type": "tsc"
+		"deploy": "npx wrangler pages deploy public"
 	},
 	"devDependencies": {
 		"undici": "^5.9.1",
