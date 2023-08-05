@@ -1,0 +1,22 @@
+{
+	"name": "cloudflare-pages-with-workers-starter",
+	"version": "0.0.1",
+	"private": true,
+	"sideEffects": false,
+	"scripts": {
+		"dev": "npx wrangler pages dev public --port 8080",
+		"deploy": "npx wrangler pages deploy public",
+		"test": "npx vitest run",
+		"test:ci": "npx vitest run",
+		"test:watch": "npx vitest",
+		"type:tests": "tsc -p ./tests/tsconfig.json",
+		"check:type": "tsc"
+	},
+	"devDependencies": {
+		"undici": "^5.9.1",
+		"wrangler": "^3.4.0"
+	},
+	"engines": {
+		"node": ">=16.13"
+	}
+}
